@@ -49,10 +49,11 @@ Brute force - O(n²) comparisons, too slow for large inputs.
 
 Hashmap - O(n) lookups, very efficient.
 
-### Learnings
+### What Did I Learn?
 Learned difference between brute force and optimized solutions.
 Understood how hashmaps give constant-time lookup.
 Practiced writing both naive and efficient solutions.
+
 
 
 

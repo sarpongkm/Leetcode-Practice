@@ -118,15 +118,3 @@ class Solution(object):
 * How to turn a naive O(n²) search into an O(n) scan using running minima.
 * The link between “buy low, sell high” and **maximum subarray** (Kadane’s algorithm).
 * Edge cases: strictly decreasing arrays should return `0`; arrays of length 1 also return `0`.
-
-
-### Quick Step-by-Step (One-Pass) on `[7,1,5,3,6,4]`
-
-* `min=∞ → 7 → 1`
-* Day 1 (price 7): min=7, best=0
-* Day 2 (price 1): min=1, best=0
-* Day 3 (price 5): profit=4, best=4
-* Day 4 (price 3): profit=2, best=4
-* Day 5 (price 6): profit=5, best=5
-* Day 6 (price 4): profit=3, best=5
-  Return `5`.

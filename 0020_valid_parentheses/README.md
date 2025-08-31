@@ -31,8 +31,6 @@ Output: true
 * 1 <= s.length <= 10⁴
 * s consists only of `'()[]{}'`
 
----
-
 ## Solutions
 
 ### Approach 1: Stack (Best Solution)
@@ -62,8 +60,6 @@ class Solution(object):
         return not stack
 ```
 
----
-
 ### Approach 2: Iterative Replacement (This One Is More Simpler Than the First)
 
 * Repeatedly remove `"()"`, `"[]"`, and `"{}"` from the string.
@@ -83,14 +79,10 @@ class Solution(object):
         return s == ""
 ```
 
----
-
 ### Why Stack Is Better?
 
 * **Stack** guarantees O(n) processing, no repeated scanning.
 * **Replacement** is intuitive but inefficient for long strings.
-
----
 
 ### What Did I Learn?
 

@@ -23,7 +23,7 @@ Explanation: No profitable transaction; return 0.
 * 1 <= prices.length <= 10^5
 * 0 <= prices\[i] <= 10^4
 
----
+
 
 ## Solutions
 
@@ -50,7 +50,6 @@ class Solution(object):
         return best
 ```
 
----
 
 ### Approach 2: One-Pass (Track Min Price So Far) — Optimal
 
@@ -78,7 +77,7 @@ class Solution(object):
         return best
 ```
 
----
+
 
 ### Approach 3: Kadane’s on Daily Deltas (Nice Alternative)
 
@@ -114,7 +113,6 @@ class Solution(object):
 * One-pass maintains just two numbers (`min_price`, `best`) and finishes in O(n), perfect for large inputs.
 * Kadane’s is conceptually elegant and also O(n), but the one-pass min-tracker is the most direct.
 
----
 
 ### What Did I Learn?
 
@@ -122,7 +120,6 @@ class Solution(object):
 * The link between “buy low, sell high” and **maximum subarray** (Kadane’s algorithm).
 * Edge cases: strictly decreasing arrays should return `0`; arrays of length 1 also return `0`.
 
----
 
 ### Quick Step-by-Step (One-Pass) on `[7,1,5,3,6,4]`
 

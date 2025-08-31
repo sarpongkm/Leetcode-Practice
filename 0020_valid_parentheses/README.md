@@ -35,7 +35,7 @@ Output: true
 
 ## Solutions
 
-### Approach 1: Stack (Standard Solution)
+### Approach 1: Stack (Best Solution)
 
 * Use a stack to track opening brackets.
 * When a closing bracket is found, check if it matches the last opening bracket.
@@ -64,7 +64,7 @@ class Solution(object):
 
 ---
 
-### Approach 2: Iterative Replacement (Simple Trick)
+### Approach 2: Iterative Replacement (This One Is More Simpler Than the First)
 
 * Repeatedly remove `"()"`, `"[]"`, and `"{}"` from the string.
 * Continue until no more pairs can be removed.

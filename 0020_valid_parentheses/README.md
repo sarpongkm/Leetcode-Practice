@@ -2,46 +2,38 @@
 
 ## Problem
 
-Given a string `s` containing just the characters `'('`, `')'`, `'{'`, `'}'`, `'['`, and `']'`, determine if the input string is valid.
+Given a string `s` containing only `'('`, `')'`, `'{'`, `'}'`, `'['`, and `']'`, check if the string is **valid**.
 
 A string is valid if:
 
-* Open brackets must be closed by the same type of brackets.
-* Open brackets must be closed in the correct order.
-* Every closing bracket must have a corresponding opening bracket.
+1. Every open bracket has a matching close.
+2. Brackets close in the correct order.
 
 **Examples**
 
 ```
 Input: s = "()"
-Output: true
+Output: true  
 
 Input: s = "()[]{}"
-Output: true
+Output: true  
 
 Input: s = "(]"
-Output: false
+Output: false  
 
 Input: s = "([])"
 Output: true
 ```
 
-**Constraints**
-
-* 1 <= s.length <= 10⁴
-* s consists only of `'()[]{}'`
-
 ## Solutions
 
 ### Approach 1: Stack (Best Solution)
 
-* Use a stack to track opening brackets.
-* When a closing bracket is found, check if it matches the last opening bracket.
-* If not, return False.
-* At the end, if the stack is empty, return True.
-
-**Time Complexity**: O(n)
-**Space Complexity**: O(n)
+* Use a stack to store opening brackets.
+* When we see a closing bracket, check if it matches the most recent opening bracket.
+* At the end, if the stack is empty → valid string.
+* **Time Complexity:** O(n)
+* **Space Complexity:** O(n)
 
 ```python
 class Solution(object):
@@ -60,14 +52,13 @@ class Solution(object):
         return not stack
 ```
 
-### Approach 2: Iterative Replacement (This One Is More Simpler Than the First)
 
-* Repeatedly remove `"()"`, `"[]"`, and `"{}"` from the string.
-* Continue until no more pairs can be removed.
-* If the final string is empty, it was valid.
+### Approach 2: Iterative Replacement (Simpler, but Slower)
 
-**Time Complexity**: O(n²) (worst case)
-**Space Complexity**: O(1)
+* Keep removing `"()"`, `"[]"`, `"{}"` until no more pairs exist.
+* If the string ends up empty → valid.
+* **Time Complexity:** O(n²) (worst case, since we repeatedly scan).
+* **Space Complexity:** O(1)
 
 ```python
 class Solution(object):
@@ -79,13 +70,15 @@ class Solution(object):
         return s == ""
 ```
 
-### Why Stack Is Better?
 
-* **Stack** guarantees O(n) processing, no repeated scanning.
-* **Replacement** is intuitive but inefficient for long strings.
+### Why Stack Is Better
 
-### What Did I Learn?
+* Stack guarantees a clean **O(n)** solution.
+* Replacement is more intuitive but gets inefficient for large strings.
 
-* Practiced using **stack data structures** for parsing problems.
-* Understood difference between **efficient O(n)** vs. **naive O(n²)** approaches.
-* Learned to check correctness by tracing examples step by step.
+
+### Key Takeaways
+
+* Practiced applying stacks for parsing problems.
+* Saw the tradeoff between a neat O(n) solution vs. a simple but slower approach.
+* Learned to reason about correctness by manually walking through examples.

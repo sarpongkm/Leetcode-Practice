@@ -45,13 +45,14 @@ class Solution(object):
             hashmap[num] = i
 ```
 ### Why Hashmap?
-Brute force → O(n²) comparisons, too slow for large inputs.
+Brute force - O(n²) comparisons, too slow for large inputs.
 
-Hashmap → O(n) lookups, very efficient.
+Hashmap - O(n) lookups, very efficient.
 
 ### Learnings
 Learned difference between brute force and optimized solutions.
 Understood how hashmaps give constant-time lookup.
 Practiced writing both naive and efficient solutions.
+
 
 

@@ -1,5 +1,4 @@
 # 0001. Two Sum
-
 ## Problem
 Given an array of integers `nums` and an integer `target`, return the indices of the two numbers such that they add up to `target`.
 
@@ -8,9 +7,7 @@ Input: nums = [2,7,11,15], target = 9
 
 Output: [0,1]
 
-
 ## Solutions
-
 ### Approach 1: Brute Force
 - Check every pair of numbers.
 - Time Complexity: O(n²)
@@ -53,6 +50,7 @@ Hashmap - O(n) lookups, very efficient.
 Learned difference between brute force and optimized solutions.
 Understood how hashmaps give constant-time lookup.
 Practiced writing both naive and efficient solutions.
+
 
 
 

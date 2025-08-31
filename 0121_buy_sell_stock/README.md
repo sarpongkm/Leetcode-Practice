@@ -40,7 +40,7 @@ class Solution(object):
 ```
 
 
-### Approach 2: One-Pass (Track Minimum Price) ✅
+### Approach 2: One-Pass (Track Minimum Price)
 
 * Track the minimum price seen so far.
 * At each step, compute profit if we sold today.

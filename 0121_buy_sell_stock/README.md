@@ -105,7 +105,6 @@ class Solution(object):
         return best
 ```
 
----
 
 ### Why the One-Pass Method?
 

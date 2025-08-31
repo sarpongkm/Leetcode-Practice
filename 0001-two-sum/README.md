@@ -16,7 +16,7 @@ Output: [0,1]
 - Time Complexity: O(n²)
 - Space Complexity: O(1)
 
-
+```python
 class Solution(object):
     def twoSum(self, nums, target):
         n = len(nums)
@@ -34,6 +34,7 @@ Time Complexity: O(n)
 
 Space Complexity: O(n)
 
+```python
 class Solution(object):
     def twoSum(self, nums, target):
         hashmap = {}
@@ -52,3 +53,4 @@ Hashmap → O(n) lookups, very efficient.
 Learned difference between brute force and optimized solutions.
 Understood how hashmaps give constant-time lookup.
 Practiced writing both naive and efficient solutions.
+

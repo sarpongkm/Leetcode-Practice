@@ -26,7 +26,7 @@ Output: [0]
 
 ## Solutions
 
-### Approach 1: Iterative with Dummy Node ✅
+### Approach 1: Iterative with Dummy Node
 
 * Create a **dummy node** to simplify edge cases.
 * Use a pointer (`tail`) to build the merged list.

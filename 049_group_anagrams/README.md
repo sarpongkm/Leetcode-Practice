@@ -47,7 +47,7 @@ class Solution(object):
 ```
 
 
-### Approach 2: Character Count as Key ✅
+### Approach 2: Character Count as Key
 
 * Instead of sorting (O(k log k)), build a frequency count for each word (26 letters).
 * Convert the count to a tuple and use it as the key.
